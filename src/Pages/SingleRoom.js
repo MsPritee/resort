@@ -73,7 +73,11 @@ export default function SingleRoom() {
       </section>
       <section className="room-extras">
         <h6>extras</h6>
-        {/* <ul>{extras.map(item, index=>)}</ul> */}
+        <ul className="extras">
+          {extras.map((item, index) => {
+            return <li key={index}>- {item}</li>;
+          })}
+        </ul>
       </section>
     </>
   );
